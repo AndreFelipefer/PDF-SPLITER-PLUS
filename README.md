@@ -1,57 +1,56 @@
 # PDF Splitter Plus
 
-**PDF Splitter Plus** é uma ferramenta fácil de usar para dividir arquivos PDF em partes menores e extrair páginas de capa para uma pasta separada. Ideal para quem precisa organizar documentos grandes de maneira eficiente.
+**PDF Splitter Plus** é uma ferramenta para dividir arquivos PDF em múltiplos documentos com base em um texto específico. Além disso, permite extrair e mover páginas de capa para uma pasta separada, se necessário. A aplicação é desenvolvida em Python utilizando bibliotecas como PyPDF2, PyMuPDF (fitz) e Tkinter para a interface gráfica.
 
 ## Funcionalidades
 
-- **Divisão de Arquivos PDF**: Separa arquivos PDF com base em um texto específico para criar documentos menores.
-- **Extração de Páginas de Capa**: Extrai e move páginas de capa para um diretório separado.
-- **Interface Gráfica Intuitiva**: Simples e amigável, permitindo fácil configuração e controle.
-- **Barra de Progresso em Tempo Real**: Acompanhe o progresso do processamento dos arquivos.
-- **Atualização Automática da Contagem de Arquivos**: Mostra o total de arquivos divididos após o processamento.
-- **Seleção de Múltiplos Arquivos**: Permite processar vários arquivos PDF simultaneamente.
-- **Configuração de Páginas de Capa**: Define o número e as páginas das capas a serem extraídas.
+- **Divisão de PDF:** Divide o PDF em arquivos separados com base em um texto específico encontrado nas páginas.
+- **Extração de Páginas de Capa:** Permite extrair páginas específicas para um arquivo de capa separado.
+- **Interface Gráfica:** Fornece uma interface gráfica amigável para selecionar arquivos, definir parâmetros e acompanhar o progresso.
 
-## Aprimoramentos
+## Requisitos
 
-- **Registro de Operações**: Sistema de log para rastrear operações e erros.
-- **Processamento em Segundo Plano**: Utiliza threads para manter a interface responsiva.
-- **Atualização Dinâmica da Interface**: Atualiza campos e a barra de progresso em tempo real.
-- **Verificação de Dados de Entrada**: Valida dados fornecidos pelo usuário para garantir precisão.
-- **Melhoria na Usabilidade**: Ajusta visibilidade de campos e opções para uma melhor interação.
-- **Feedback Imediato**: Mensagens de alerta e confirmação informam o status do processamento.
+Certifique-se de que você tenha as seguintes bibliotecas instaladas:
 
-## Como Usar
-
-1. **Selecionar Arquivos**:
-   - Clique no botão para escolher arquivos PDF. Você pode selecionar múltiplos arquivos ao mesmo tempo.
-
-2. **Definir Informações**:
-   - Insira o nome para os novos arquivos divididos e o texto usado para a divisão.
-
-3. **Configurar Páginas de Capa** (opcional):
-   - Se houver capas, marque a opção correspondente e informe os números das páginas de capa.
-
-4. **Iniciar o Processo**:
-   - Clique no botão "Iniciar" para começar a divisão e extração. Acompanhe o progresso na barra de progresso.
-
-5. **Visualizar Resultados**:
-   - Após o processamento, veja a contagem total de arquivos divididos e acesse os arquivos gerados.
-
-## Dependências
-
-- `os`
-- `shutil`
 - `PyPDF2`
-- `fitz` (PyMuPDF)
-- `tkinter`
-- `threading`
+- `PyMuPDF` (fitz)
+- `tkinter` (incluído por padrão com Python)
 
-## Instalação
-
-Para usar o **PDF Splitter Plus**, clone este repositório e instale as dependências necessárias. 
+Instale as bibliotecas necessárias com pip:
 
 ```bash
-git clone https://github.com/usuario/pdf-splitter-plus.git
-cd pdf-splitter-plus
-pip install -r requirements.txt
+pip install PyPDF2 pymupdf
+````
+
+Uso
+1 Execute o Script: Abra o terminal e execute o script:
+
+```bash
+python nome_do_arquivo.py
+````
+
+2 Selecione os Arquivos PDF: Clique no botão "Selecionar Arquivos" e escolha os arquivos PDF que deseja processar.
+
+3 Defina os Parâmetros:
+
+Nome da Concessionária: Insira o nome da concessionária para nomear os arquivos gerados.
+Texto para Dividir as Faturas: Informe o texto que será usado para dividir o PDF.
+O Arquivo Possui Capa(s): Marque esta opção se o arquivo PDF tiver páginas de capa que você deseja extrair.
+Número de Capas: Informe o número de páginas de capa a serem extraídas.
+Número da Página da Capa X: Para cada página de capa, insira o número da página correspondente.
+
+4 Inicie o Processo: Clique no botão "Iniciar" para começar a divisão e extração do PDF. O progresso será mostrado na barra de progresso.
+
+Logs
+O script gera um arquivo de log chamado operation_log.txt onde todas as operações e erros são registrados.
+
+Exemplo
+Aqui está um exemplo de uso do PDF Splitter Plus:
+
+Selecione um arquivo PDF.
+Defina o nome da concessionária como Concessionaria ABC.
+Insira o texto para divisão como Fatura.
+Marque a opção para páginas de capa, insira o número de capas e as páginas correspondentes.
+Clique em "Iniciar" para dividir o PDF e extrair as capas.
+Contribuição
+Se você deseja contribuir para o desenvolvimento do PDF Splitter Plus, fique à vontade para fazer um fork do repositório e enviar pull requests com melhorias e correções.
