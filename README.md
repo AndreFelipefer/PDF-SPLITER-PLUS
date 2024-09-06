@@ -1,14 +1,14 @@
-# PDF Splitter Plus
+# 📄 PDF Splitter Plus
 
 **PDF Splitter Plus** é uma ferramenta para dividir arquivos PDF em múltiplos documentos com base em um texto específico. Além disso, permite extrair e mover páginas de capa para uma pasta separada, se necessário. A aplicação é desenvolvida em Python utilizando bibliotecas como PyPDF2, PyMuPDF (fitz) e Tkinter para a interface gráfica.
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
 - **Divisão de PDF:** Divide o PDF em arquivos separados com base em um texto específico encontrado nas páginas.
 - **Extração de Páginas de Capa:** Permite extrair páginas específicas para um arquivo de capa separado.
 - **Interface Gráfica:** Fornece uma interface gráfica amigável para selecionar arquivos, definir parâmetros e acompanhar o progresso.
 
-## Requisitos
+## ⚙️ Requisitos
 
 Certifique-se de que você tenha as seguintes bibliotecas instaladas:
 
@@ -22,12 +22,12 @@ Instale as bibliotecas necessárias com pip:
 pip install PyPDF2 pymupdf
 ````
 
-Uso
+🛠️ Uso
 1 Execute o Script: Abra o terminal e execute o script:
 
 ```bash
 python nome_do_arquivo.py
-````
+```
 
 2 Selecione os Arquivos PDF: Clique no botão "Selecionar Arquivos" e escolha os arquivos PDF que deseja processar.
 
@@ -41,10 +41,10 @@ Número da Página da Capa X: Para cada página de capa, insira o número da pá
 
 4 Inicie o Processo: Clique no botão "Iniciar" para começar a divisão e extração do PDF. O progresso será mostrado na barra de progresso.
 
-Logs
+📋 Logs
 O script gera um arquivo de log chamado operation_log.txt onde todas as operações e erros são registrados.
 
-Exemplo
+📂 Exemplo
 Aqui está um exemplo de uso do PDF Splitter Plus:
 
 Selecione um arquivo PDF.
@@ -52,5 +52,9 @@ Defina o nome da concessionária como Concessionaria ABC.
 Insira o texto para divisão como Fatura.
 Marque a opção para páginas de capa, insira o número de capas e as páginas correspondentes.
 Clique em "Iniciar" para dividir o PDF e extrair as capas.
-Contribuição
+
+🤝 Contribuição
 Se você deseja contribuir para o desenvolvimento do PDF Splitter Plus, fique à vontade para fazer um fork do repositório e enviar pull requests com melhorias e correções.
+
+📜 Licença
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para obter detalhes.
